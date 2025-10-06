@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Forms</title>
+    <style>
+        p { color: brown; }
+        #idExample { color: red; }
+        .classExample { color: blue; }
+        h1, h2 { color: green; }
+        * { font-family: Arial, sans-serif; }
+
+        div p { background-color: #f0f0f0; }
+        div > p { border: 1px solid black; }
+        h2 + p { font-weight: bold; }
+        h2 ~ p { font-style: italic; }
+
+        a:hover { color: orange; }
+        p:first-child { text-decoration: underline; }
+
+        p::first-letter { font-size: 24px; color: purple; }
+
+        a[target="_blank"] { background-color: yellow; }
+    </style>
+</head>
+<body>
+
+<h1>CSS Selectors Example</h1>
+
+<p>This is a paragraph using element selector.</p>
+<p id="idExample">This paragraph uses ID selector.</p>
+<p class="classExample">This paragraph uses class selector.</p>
+<h2>Group Selector Example</h2>
+
+<div>
+    <p>Descendant selector (inside div)</p>
+    <p>Child selector (direct child of div)</p>
+</div>
+<h2>Adjacent Sibling</h2>
+<p>This paragraph is adjacent sibling of h2</p>
+<h2>General Sibling</h2>
+<p>This paragraph is general sibling of h2</p>
+
+<a href="#" target="_blank">External Link (hover me)</a>
+
+<p>This paragraph has first letter styled.</p>
+
+<a href="https://www.google.com" target="_blank">Google Link</a>
+
+</body>
+</html>
